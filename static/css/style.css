@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --web-view-ids: Web_1920___1;
+}
+#Web_1920___1 * {
+    margin: 0;
+    padding: 0;
+}
+#Web_1920___1 {
+    position: absolute;
+    box-sizing: border-box;
+    background: #E5E5E5;
+    width: 1920px;
+    height: 947px;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    --web-view-name: Web 1920 – 1;
+    --web-view-id: Web_1920___1;
+    --web-enable-deep-linking: true;
+}
+#Rectangle_6 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    fill: rgba(255,59,63,1);
+}
+.Rectangle_6 {
+    position: absolute;
+    overflow: visible;
+    width: 1938px;
+    height: 970px;
+    left: 0px;
+    top: -5px;
+}
+#_So_many_books__so_little_time {
+    position: absolute;
+    left: 765px;
+    top: 699px;
+    overflow: visible;
+    width: 391px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: rgba(255,255,255,1);
+}
+#Story_Ever_After {
+    position: absolute;
+    left: 582px;
+    top: 59px;
+    overflow: visible;
+    width: 757px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 101px;
+    color: rgba(255,255,255,1);
+}
+#Group_5 {
+    position: absolute;
+    width: 674px;
+    height: 68px;
+    left: 623px;
+    top: 506px;
+    overflow: visible;
+}
+#Rectangle_15 {
+    filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.161));
+    fill: rgba(255,255,255,1);
+}
+.Rectangle_15 {
+    position: absolute;
+    overflow: visible;
+    width: 698px;
+    height: 92px;
+    left: 0px;
+    top: 0px;
+}
+#iconfinder_icon_111_search_314 {
+    position: absolute;
+    width: 38.788px;
+    height: 38.784px;
+    left: 606px;
+    top: 15px;
+    overflow: visible;
+}
+#icon_111_search {
+    position: absolute;
+    width: 38.788px;
+    height: 38.784px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#search {
+    fill: rgba(146,146,146,1);
+}
+.search {
+    transform: matrix(1,0,0,1,0,0);
+    overflow: visible;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 38.788px;
+    height: 38.784px;
+}
