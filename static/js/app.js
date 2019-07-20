@@ -1,7 +1,6 @@
 //API CALL TO AUTHOR SEARCH
 
 // Select the submit button
-function displayData(){ 
 
    var submit = d3.select("#submit");
 
@@ -19,32 +18,35 @@ function displayData(){
   // Get the value property of the input element
 
    var author = inputElement.property("value");
+   console.log(author)
 
 // var filteredData = people.filter(person => person.bloodType === inputValue);
  
 // Set the span tag in the h1 element to the text
   // that was entered in the form
 
-  d3.select("h1>span").text(author);
-//   d3.select(".summary").text(author);
-//   d3.select(".summary")
-//     .append("li").text(`Mean: ${mean}`)
-//     .append("li").text(`Median: ${median}`)
-//     .append("li").text(`Mode: ${mode}`)
-//     .append("li").text(`Variance: ${variance}`)
-//     .append("li").text(`Standard Deviation: ${standardDeviation}`);
-
    d3.json(`api/authorsearch/${author}`).then(function(data){
-    console.log (data)  
+
+    birthplace=data['birthplace']
+    gender=data['gender']
+    rating=data['rating']
+    books=data['books']
+
+    d3.select(".summary").text(author)
+      .append("li").text(birthplace)
+      .append("li").text(gender)
+    
+      tbody = d3.select("tbody")
+        tbody.text("")
+        books.forEach(function(title){
+            new_tr = tbody.append("tr")
+            new_td = new_tr.append("td").text(title)
+
+
+        console.log (data)
 });
 
-// author='Amy Tan'
-// d3.json(`api/authorsearch/${author}`).then(function(data){
-//     console.log (data)
-// })
+
 
 })
-
-}
-
-displayData()
+});

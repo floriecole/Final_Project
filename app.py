@@ -58,7 +58,7 @@ def index():
 
 @app.route("/api/booksearch/<title>", methods=['GET'] )
 def booksearch(title):
-    """Return book(s) based on title search. Limit to top 10."""
+    """Return book(s) based on title search"""
 
     sel=[isbn_data.ISBN, 
         isbn_data.bookTitle,

@@ -10,7 +10,7 @@
 
   <!-- Style -->
   <link rel="stylesheet" href="../static/css/style.css">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
 </head>
@@ -36,7 +36,7 @@
       <div class="col-md-12">
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <label for="search-form">Enter Title or Author Name</label>
+            <label for="search-form">Enter Name</label>
             <input class="form-control" id="search-form-input" name="search-form" type="text"placeholder="J.K. Rowling">
           </div>
           <button id="submit" type="submit" class="btn btn-default">Submit</button>
@@ -46,16 +46,28 @@
     <div class="row">
       <div class="col-md-12">
         <h1>Search Details:
-        <!-- <ul class="summary"></ul> -->
-          <span></span>
+        <ul class="summary"></ul>
+          <!-- <span></span> -->
         </h1>
       </div>
     </div>
+    <div class="col-md-12">
+            <div id="table-area" class="table-responsive">
+              <table id="book-table" class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="table-head">Titles</th>
+                  </tr>
+                </thead>
+                <tbody id="titles"></tbody>
+              </table>
+            </div>
+          </div>
  </div>
 <!-- Bootstrap -->
 <!-- <script src="../static/js/bootstrap.min.js"></script> -->
-<script src="js/app.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<script src="/static/js/app.js"></script>
+
 </body>
-<!-- <script src="js/app.js"></script> -->
+
 </html>
